@@ -10,22 +10,26 @@ actions:
   - action: camera.snapshot
     metadata: {}
     data:
-      filename: /tmp/frontdoor.jpg
+      filename: /media/local/frontdoor.jpg
     target:
-      device_id: XXXXXX
+      device_id: XXXX
   - action: google_generative_ai_conversation.generate_content
     data:
       prompt: >-
         Very briefly describe what you see in this image from my doorbell
         camera. Your message needs to be short to fit in a phone notification.
         Don't describe stationary objects or buildings.
-      image_filename: /tmp/frontdoor.jpg
+      image_filename: /media/local/frontdoor.jpg
     response_variable: generated_content
-  - action: notify.mobile_app_XXXXXX
+  - action: notify.mobile_app_XXXX
     metadata: {}
     data:
       title: Navi AI
       message: "{{generated_content.text}}"
+      data:
+        attachment:
+          url: /media/local/local/frontdoor.jpg
+          conent-type: jpg
 mode: single
 variables:
   generated_content: None
