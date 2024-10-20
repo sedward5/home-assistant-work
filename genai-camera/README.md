@@ -11,3 +11,5 @@ homeassistant:
     allowlist_external_dirs:
       - /tmp
 ```
+![Screenshot of notification](./IMG_3331.jpeg)
+![Screenshot from camera](./IMG_3332.jpeg)
