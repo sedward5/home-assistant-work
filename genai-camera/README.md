@@ -5,11 +5,7 @@ An automation that sends a camera snapshot to google generative ai for a summary
 * A camera with person detection. Nest Hello in my case
 * A [Google Genrative AI API](https://aistudio.google.com/app/apikey) key. I'm using free tier. 
 * The [Google Generative AI Home Assistant Integration](https://www.home-assistant.io/integrations/google_generative_ai_conversation/)
-* The following statement in configuration.yaml
-```yaml
-homeassistant:
-    allowlist_external_dirs:
-      - /tmp
-```
+
+# Screenshot
 ![Screenshot of notification](./IMG_3331.jpeg)
 ![Screenshot from camera](./IMG_3332.jpeg)
